@@ -6,17 +6,28 @@ using Xunit;
 
 namespace IronMan.UnitTests
 {
-    public class MissileFactoryTests
+    public class MissileFactoryTests : IClassFixture<MissileFactoryFixture>, IDisposable
     {
+        private MissileFactoryFixture fixture;
+
+        public MissileFactoryTests(MissileFactoryFixture fixture)
+        {
+            this.fixture = fixture;
+        }
+
+        public void Dispose()
+        {
+            fixture = null;
+        }
+
         [Theory]
         [InlineData(MissileType.Guided, typeof(LaserGuidedMissile))]
         [InlineData(MissileType.Autonomous, typeof(HeatSeekingMissile))]
         public void When_creating_missiletype_then_expect_type(MissileType missileType, Type type)
         {
             // arrange
-            var factory = new MissileFactory();
             // act
-            var missile = factory.Create(missileType);
+            var missile = fixture.MissileFactory.Create(missileType);
             // assert
             Assert.IsType(type, missile);
         }
@@ -47,10 +58,9 @@ namespace IronMan.UnitTests
         public void When_creating_unkown_then_expect_exception()
         {
             // arrange
-            var factory = new MissileFactory();
             var type = (MissileType) 3;
             // act & assert
-            Assert.Throws<ArgumentOutOfRangeException>(() => factory.Create(type));
+            Assert.Throws<ArgumentOutOfRangeException>(() => fixture.MissileFactory.Create(type));
         }
     }
 }

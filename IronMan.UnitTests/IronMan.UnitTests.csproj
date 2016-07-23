@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="LauncherTests.cs" />
     <Compile Include="MissileClassData.cs" />
+    <Compile Include="MissileFactoryFixture.cs" />
     <Compile Include="MissileFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

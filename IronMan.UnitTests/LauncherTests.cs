@@ -13,11 +13,17 @@ namespace IronMan.UnitTests
 {
     public class LauncherTests
     {
+        private readonly Mock<IMissile> mockMissile;
+
+        public LauncherTests()
+        {
+            mockMissile = new Mock<IMissile>();
+        }
+
         [Fact]
         public void When_launching_missile_then_decrease_missile_count_by_1()
         {
             // arrange
-            var mockMissile = new Mock<IMissile>();
             var launcher = new Launcher(new List<IMissile> {mockMissile.Object});
             // act
             launcher.Launch();

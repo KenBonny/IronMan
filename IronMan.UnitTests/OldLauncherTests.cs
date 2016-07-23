@@ -16,9 +16,6 @@ namespace IronMan.UnitTests
             Assert.Equal(1, oldLauncher.MissileCount);
         }
 
-        [Fact]
-
-
         private static OldLauncher CreateOldLauncher()
         {
             return new OldLauncher();

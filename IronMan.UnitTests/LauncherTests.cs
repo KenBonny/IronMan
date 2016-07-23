@@ -40,6 +40,7 @@ namespace IronMan.UnitTests
 
         [Theory]
         [MemberData(nameof(MissileData))]
+        [Trait("Category", "ComponentTest")]
         public void When_launching_missile_from_memberdata_then_decrease_missile_count_by_1(IMissile missile)
         {
             // arrange
@@ -52,6 +53,7 @@ namespace IronMan.UnitTests
 
         [Theory]
         [ClassData(typeof(MissileClassData))]
+        [Trait("Category", "ComponentTest")]
         public void When_launching_missile_from_classdata_then_decrease_missile_count_by_1(IMissile missile)
         {
             // arrange

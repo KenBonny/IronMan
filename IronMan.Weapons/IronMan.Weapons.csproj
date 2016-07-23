@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Launcher.cs" />
+    <Compile Include="MissileFactory.cs" />
+    <Compile Include="Missiles\HeatSeekingMissile.cs" />
+    <Compile Include="Missiles\LaserGuidedMissile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

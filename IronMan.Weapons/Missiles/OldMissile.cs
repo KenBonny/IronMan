@@ -2,7 +2,7 @@
 {
     public class OldMissile
     {
-        public bool Fire()
+        public virtual bool Fire()
         {
             return true;
         }

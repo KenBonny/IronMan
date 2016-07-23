@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IronMan.UnitTests
 {
-    public class Class1
+    public class MissileTests
     {
     }
 }

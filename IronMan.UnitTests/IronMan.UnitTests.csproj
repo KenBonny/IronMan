@@ -67,11 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MissileTests.cs" />
+    <Compile Include="LauncherTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IronMan.Core\IronMan.Core.csproj">
+      <Project>{3B2D44C6-B073-4E22-9228-4DABC55D9F20}</Project>
+      <Name>IronMan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IronMan.Weapons\IronMan.Weapons.csproj">
+      <Project>{BC7D3973-91DB-4182-87AF-3128CD8D6692}</Project>
+      <Name>IronMan.Weapons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

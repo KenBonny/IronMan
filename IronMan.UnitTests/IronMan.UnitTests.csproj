@@ -37,6 +37,10 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="LightInject, Version=4.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LightInject.4.0.11\lib\net45\LightInject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Moq, Version=4.5.16.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.5.16\lib\net45\Moq.dll</HintPath>
       <Private>True</Private>
@@ -67,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IocConfigurationTests.cs" />
     <Compile Include="LauncherTests.cs" />
     <Compile Include="MissileClassData.cs" />
     <Compile Include="MissileFactoryFixture.cs" />
@@ -81,6 +86,10 @@
     <ProjectReference Include="..\IronMan.Core\IronMan.Core.csproj">
       <Project>{3B2D44C6-B073-4E22-9228-4DABC55D9F20}</Project>
       <Name>IronMan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IronMan.Jarvis\IronMan.Jarvis.csproj">
+      <Project>{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}</Project>
+      <Name>IronMan.Jarvis</Name>
     </ProjectReference>
     <ProjectReference Include="..\IronMan.Weapons\IronMan.Weapons.csproj">
       <Project>{BC7D3973-91DB-4182-87AF-3128CD8D6692}</Project>

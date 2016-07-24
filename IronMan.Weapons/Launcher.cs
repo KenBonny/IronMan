@@ -5,7 +5,7 @@ using IronMan.Core;
 
 namespace IronMan.Weapons
 {
-    public class Launcher
+    public class Launcher : ILauncher
     {
         private ICollection<IMissile> missiles;
 

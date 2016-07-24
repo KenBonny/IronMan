@@ -4,7 +4,7 @@ using IronMan.Weapons.Missiles;
 
 namespace IronMan.Weapons
 {
-    public class MissileFactory
+    public class MissileFactory : IMissileFactory
     {
         public IMissile Create(MissileType type)
         {

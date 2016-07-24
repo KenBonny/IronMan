@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMan.Core", "IronMan.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMan.Weapons", "IronMan.Weapons\IronMan.Weapons.csproj", "{BC7D3973-91DB-4182-87AF-3128CD8D6692}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronMan.Jarvis", "IronMan.Jarvis\IronMan.Jarvis.csproj", "{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BC7D3973-91DB-4182-87AF-3128CD8D6692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC7D3973-91DB-4182-87AF-3128CD8D6692}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC7D3973-91DB-4182-87AF-3128CD8D6692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873C28E0-E934-4CA8-B9BC-2E9E2E81C9E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILauncher.cs" />
     <Compile Include="IMissile.cs" />
+    <Compile Include="IMissileFactory.cs" />
     <Compile Include="MissileType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using IronMan.Core;
+using System.Threading.Tasks;
 
 namespace IronMan.Weapons
 {
@@ -20,6 +21,15 @@ namespace IronMan.Weapons
         {
             var missile = missiles.First();
             missiles.Remove(missile);
+        }
+
+        public Task LaunchAsync()
+        {
+            return Task.Factory.StartNew(() =>
+            {
+                var missile = missiles.First();
+                missiles.Remove(missile);
+            });
         }
     }
 }

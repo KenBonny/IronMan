@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IocConfigurationTests.cs" />
+    <Compile Include="LauncherAsyncTests.cs" />
     <Compile Include="LauncherTests.cs" />
     <Compile Include="MissileClassData.cs" />
     <Compile Include="MissileFactoryFixture.cs" />
